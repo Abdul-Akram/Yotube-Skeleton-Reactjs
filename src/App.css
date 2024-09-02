@@ -12,5 +12,7 @@
 }
 .main-content{
   width: 100%;
-  margin: 0 auto;
+  margin: 3rem auto;
+  height: 100vh;
+  overflow: auto;
 }

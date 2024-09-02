@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Cards from '../Components/Cards';
 
-
-const Homes = () => {
+const Homes = ({ videodet }) => {
     return (
         <div>
-
+            <Cards videodet={videodet} />
         </div>
-    )
+    );
 }
 
-export default Homes
+export default Homes;

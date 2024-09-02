@@ -1,18 +1,62 @@
-.heading{
+.heading {
+    position: fixed;
+    top: 0;
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-.heading h1{
-    white-space: nowrap;
-    font-size: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
-.heading input{
-    border-radius: 20px;
-    border: 1px solid rgba(64, 64, 64, 0.548);
-    padding:.4rem;
+.heading h1 {
+    white-space: nowrap;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
 }
-.heading i{
-    color: red;
+
+.heading input {
+    flex-grow: 1;
+    max-width: 400px;
+    border-radius: 20px;
+    border: 1px solid rgba(64, 64, 64, 0.3);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    margin-right: 6rem;
+    transition: border-color 0.3s ease;
+}
+
+.heading input:focus {
+    border-color: #ff0000;
+    outline: none;
+}
+
+.heading i {
+    font-size: 1.5rem;
+    color: #ff0000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.heading i:hover {
+    color: #d40000;
+}
+
+@media (max-width: 768px){
+    .heading {
+        justify-content: space-around;
+    }
+}
+@media (max-width: 500px){
+    .heading input{
+        max-width: 100px;
+        width: 100px;
+        
+    }
 }
