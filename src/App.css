@@ -1,0 +1,16 @@
+.App{
+  min-height: auto;
+  display: flex;
+  
+}
+.navbar{
+  width: 8%;
+
+}
+.navbar,.main-content{
+  min-height: auto;
+}
+.main-content{
+  width: 100%;
+  margin: 0 auto;
+}
